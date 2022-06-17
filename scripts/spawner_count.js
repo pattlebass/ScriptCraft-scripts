@@ -47,7 +47,7 @@ command("uprender", (args, player) => {
 		return;
 	}
 
-	registeredPlayers[player].distance += 2;
+	registeredPlayers[player].distance++;
 	echo(player, "Scanning distance: " + registeredPlayers[player].distance);
 });
 
@@ -58,7 +58,7 @@ command("downrender", (args, player) => {
 		return;
 	}
 
-	registeredPlayers[player].distance -= 2;
+	registeredPlayers[player].distance--;
 	echo(player, "Scanning distance: " + registeredPlayers[player].distance);
 });
 

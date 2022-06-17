@@ -14,12 +14,12 @@ let currentWorld = Bukkit.getServer().getWorld("world");
 events.playerJoin((event) => {
 	echo(event.player, "Pregatit sa o dam?");
 
-	if (event.player.world !== currentWorld) {
+	/*if (event.player.world !== currentWorld) {
 		event.player.teleport(currentWorld.getSpawnLocation());
 		console.log(
 			"Teleporting stray player " + event.player.name + " to " + currentWorld
 		);
-	}
+	}*/
 });
 
 command("reset", (args, player) => {
@@ -43,5 +43,3 @@ command("reset", (args, player) => {
 		}
 	});
 });
-
-command("test", (args, player) => {});
